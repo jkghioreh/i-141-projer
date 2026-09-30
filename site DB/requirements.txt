@@ -1,6 +1,7 @@
 Flask>=3.0
 SQLAlchemy>=2.0
 gunicorn
+pyodbc>=5.1
 
 # Pilote SQL Server (données.sql est du T-SQL) — nécessite aussi le
 # driver ODBC système "ODBC Driver 18 for SQL Server" installé sur la machine
