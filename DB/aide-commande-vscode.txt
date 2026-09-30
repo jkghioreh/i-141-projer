@@ -1,0 +1,6 @@
+python -m venv .venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.venv\Scripts\activate
+pip install -r requirements.txt
+$env:DATABASE_URL = "mssql+pyodbc://@DESKTOP-KAORTGL\SQLEXPRESS/footoria?driver=ODBC+Driver+18+for+SQL+Server&trusted_connection=yes&TrustServerCertificate=yes"
+python app.py

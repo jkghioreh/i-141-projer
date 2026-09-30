@@ -1,0 +1,13 @@
+# SQL Server (données.sql est écrit en T-SQL, c'est le moteur à utiliser) :
+DATABASE_URL=mssql+pyodbc://USER:PASSWORD@HOST:1433/footoria?driver=ODBC+Driver+18+for+SQL+Server&TrustServerCertificate=yes
+
+# En local avec une instance nommée (ex: SQL Server Express) :
+# DATABASE_URL=mssql+pyodbc://USER:PASSWORD@HOST\SQLEXPRESS/footoria?driver=ODBC+Driver+18+for+SQL+Server&TrustServerCertificate=yes
+
+# PostgreSQL (si tu migres un jour le schéma) :
+# DATABASE_URL=postgresql+psycopg://USER:PASSWORD@HOST:5432/footoria
+
+# MySQL (si tu migres un jour le schéma) :
+# DATABASE_URL=mysql+pymysql://USER:PASSWORD@HOST:3306/footoria
+
+PORT=5000
