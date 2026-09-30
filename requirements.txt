@@ -1,0 +1,13 @@
+Flask>=3.0
+SQLAlchemy>=2.0
+gunicorn
+pyodbc>=5.1
+
+# Pilote SQL Server (données.sql est du T-SQL) — nécessite aussi le
+# driver ODBC système "ODBC Driver 18 for SQL Server" installé sur la machine
+# (pas installable via pip) : https://learn.microsoft.com/sql/connect/odbc/download-odbc-driver-for-sql-server
+pyodbc>=5.1
+
+# Pilotes optionnels si tu changes un jour de moteur de DB
+# psycopg[binary]>=3.1
+# PyMySQL>=1.1
